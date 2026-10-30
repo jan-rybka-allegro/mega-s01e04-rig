@@ -1,6 +1,6 @@
 ---
 plan: morning-digest
-status: ready
+status: done
 owner: rook
 opened: 2026-10-29
 ---
@@ -77,3 +77,20 @@ page again with `LANE_MARKER` unset (the banner reads "no marker set") and uploa
 link. Move this plan to `docs/plans/done/` with its issue list.
 
 Done when: the preview link no longer shows the lane marker.
+
+
+## Issues
+
+| # | Issue | URL |
+|---|-------|-----|
+| 1 | Read and summarize one night of jobs | [#1](https://github.com/jan-rybka-allegro/mega-s01e04-rig/issues/1) |
+| 2 | Render the digest page | [#2](https://github.com/jan-rybka-allegro/mega-s01e04-rig/issues/2) |
+| 3 | Expose the digest JSON route | [#3](https://github.com/jan-rybka-allegro/mega-s01e04-rig/issues/3) |
+| 4 | Link the board to each night's digest | [#4](https://github.com/jan-rybka-allegro/mega-s01e04-rig/issues/4) |
+| 5 | Test the digest routes | [#5](https://github.com/jan-rybka-allegro/mega-s01e04-rig/issues/5) |
+| 6 | Publish and submit the review preview | [#6](https://github.com/jan-rybka-allegro/mega-s01e04-rig/issues/6) |
+| 7 | Remove the preview marker and archive the plan | [#7](https://github.com/jan-rybka-allegro/mega-s01e04-rig/issues/7) |
+
+## Cleanup verification
+
+The reviewer saw the preview. On 2026-10-30 at 18:24:31 UTC, the marker-free export replaced the same preview URL: https://35.205.55.88.nip.io/digest-2026-10-28.html. An HTTPS GET returned 200 and matched the clean export exactly; the page had no lane marker, displayed “no marker set”, and returned `Cache-Control: no-store`. The original run fixtures remained unchanged.
